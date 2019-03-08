@@ -1,0 +1,97 @@
+body {
+    background: #2196F3;
+    text-align: center;
+    font-family: Lato, sans-serif;
+  }
+  
+  .form {
+    background: #F6F5F5;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    margin: auto;
+    width: 75%;
+    padding: 10px 30px;
+  }
+  
+  #description {
+    padding: 10px 0px;
+    font-style: italic;
+  }
+  
+  .labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    vertical-align:top;
+    padding: 5px;
+  }
+  .information {
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+    vertical-align: middle;
+    padding: 5px;
+  }
+  
+  .lists {
+    position: relative;
+    left: -42px;
+    margin-bottom:
+  }
+  li {
+    margin: 5px;
+  }
+  .inputs {
+    width: 220px;
+    height: 20px;
+    border-radius: 2px;
+    border: solid 1px #2196F3;
+    padding: 3px;
+    margin-bottom: 5px;
+  }
+  #dropdown {
+    width: 150px;
+    height: 30px;
+    border-radius: 2px;
+    border: solid 1px #2196F3;
+    margin-top: 10px;
+  }
+  #anything-else {
+    height: 60px;
+  }
+  #submit {
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background: #2196F3;
+    font-size: 16px;
+    margin: 20px;
+  }
+  input[type=submit]:focus {
+    color: black;
+  }
+  @media only screen and (max-width: 700px) {
+    .inputs {
+      width: 80%;
+    }
+    select {
+      width: 90%;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .labels {
+      text-align: left;
+      width: 100%;
+    }
+    .information {
+      float: left;
+      width: 100%;
+    }
+    ul {
+      margin-top: -20px;
+    }
+    
+  }

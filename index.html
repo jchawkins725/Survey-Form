@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700">
+    </head>
+
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <div class="form"> 
+            <p id="description">This is a generic survey form</p>
+            <form action="" method="get" id="survey-form">
+                <div>
+                    <div class="labels">
+                        <label id="name-label" for="name">Name:</label>
+                    </div>
+                    <div class="information">
+                        <input type="text" class="inputs" id="name" placeholder="enter your name" required>
+                    </div>
+                </div>
+                <div>
+                    <div class="labels">
+                        <label id="email-label" for="email">Email:</label>
+                    </div>
+                    <div class="information">
+                        <input type="email" class="inputs" id="email" placeholder="enter your email" required>
+                    </div>
+                </div>
+                <div>
+                    <div class="labels">
+                        <label id="number-label" for="number">Age:</label>
+                    </div>
+                    <div class="information">
+                        <input type="number" class="inputs" id="number" min="18" max="100" placeholder="age">
+                    </div>
+                </div>
+                <div>
+                    <div class="labels">
+                        <p>Gender:</p>
+                    </div>
+                    <div class="information">
+                        <ul class="lists" style="list-style-type:none">
+                            <li><input type="radio" id="male" name="gender" value="male"><label for="male"> Male</label></li>
+                            <li><input type="radio" id="female" name="gender" value="female"><label for="female"> Female</label></li>
+                            <li><input type="radio" id="prefernot" name="gender" value="prefernot"><label for="prefernot"> Prefer Not To Say</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="labels">
+                        <label>What best describes your current work?</label>
+                    </div>
+                    <div class="information">
+                        <select id="dropdown">
+                            <option disabled selected value>Select an option</option>
+                            <option value="full-time">Full-Time</option>
+                            <option value="part-time">Part-Time</option>
+                            <option value="between-jobs">Between Jobs</option>
+                            <option value="retired">Retired</option>
+                            <option value="unemployed">Unemployed</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="labels">
+                        <p>Select your Interests:<br>(Check all that apply)</p>
+                    </div>
+                    <div class="information">
+                        <ul class="lists" style="list-style-type:none">
+                            <li><input type="checkbox" id="sports" name='interests' value="sports"><label for="sports"> Sports</label></li>
+                            <li><input type="checkbox" id="cooking" name='interests' value="cooking"><label for="cooking"> Cooking</label></li>
+                            <li><input type="checkbox" id="reading" name='interests' value="reading"><label for="reading"> Reading</label></li>
+                            <li><input type="checkbox" id="hiking" name='interests' value="hiking"><label for="hiking"> Hiking</label></li>
+                            <li> <input type="checkbox" id="sleeping" name='interests' value="sleeping"><label for="sleeping"> Sleeping</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="labels">
+                        <label for="anything-else">Additional Comments:</label>
+                    </div>
+                    <div class="information">
+                        <textarea id="anything-else" class="inputs" placeholder="write any additional comments here"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" id="submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
