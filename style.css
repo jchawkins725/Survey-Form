@@ -33,11 +33,9 @@ body {
     vertical-align: middle;
     padding: 5px;
   }
-  
   .lists {
     position: relative;
     left: -42px;
-    margin-bottom:
   }
   li {
     margin: 5px;
@@ -70,8 +68,9 @@ body {
     font-size: 16px;
     margin: 20px;
   }
-  input[type=submit]:focus {
-    color: black;
+  #submit:hover {
+    background-color: rgb(24, 118, 196);
+    cursor: pointer;
   }
   @media only screen and (max-width: 700px) {
     .inputs {
